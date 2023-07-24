@@ -1,0 +1,90 @@
+h1 {
+  color: #1dacbc;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+article {
+  border: 1px solid black;
+  display: flex;
+}
+h2 {
+  color: #1dacbc;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.fish {
+  flex: 1 0 calc(25% - 10px);
+  margin: 5px;
+  background: #e9d2ff;
+  flex-direction: column;
+  padding: 0px;
+}
+h3 {
+  color: #1dacbc;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quote {
+  flex: 1 0 calc(25% - 10px);
+  margin: 5px;
+  background: #e9d2ff;
+  flex-direction: column;
+  padding: 0px;
+}
+h4 {
+  color: #1dacbc;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.location {
+  flex: 1 0 calc(25% - 10px);
+  margin: 5px;
+  background: #e9d2ff;
+  flex-direction: column;
+  padding: 0px;
+}
+aside {
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f7f7f7;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-all {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.small-image {
+  width: 200px; /* Set the desired width */
+  height: auto;
+}
