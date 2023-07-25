@@ -22,7 +22,7 @@ h2 {
   font-weight: 400;
   line-height: normal;
 }
-.fish {
+.fishList {
   flex: 1 0 calc(25% - 10px);
   margin: 5px;
   background: #e9d2ff;
@@ -74,17 +74,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .container-all {
   display: flex;
 }
-
 main {
   flex: 1;
   padding: 20px;
   background-color: #f0f0f0;
 }
-.small-image {
+.fish__image {
   width: 200px; /* Set the desired width */
   height: auto;
 }
