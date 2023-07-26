@@ -55,7 +55,79 @@ const database = {
       location: "Tropical Oasis",
     },
   ],
+
+  quote: [
+    {
+      id: `"Just keep swimming" - Dory`,
+    },
+    {
+      id: `"I love the smell of fresh fish in the morning." - Anonymous`,
+    },
+    {
+      id: `"I wish I was a Fish" - Gary Kazoo`,
+    },
+    {
+      id: `"There are plenty of fish in the sea" - Unknown`,
+    },
+  ],
+
+  location: [
+    {
+      id: "Middle of Ocean",
+    },
+    {
+      id: "The Crick",
+    },
+    {
+      id: "Swimming Pool",
+    },
+    {
+      id: "Frozen Lake",
+    },
+    {
+      id: "Coy Pond",
+    },
+    {
+      id: "Tropical Oasis",
+    },
+  ],
+
+  tip: [
+    {
+      id: "1. Acclimate your fish to the water.",
+    },
+    {
+      id: "2. Float fish in their bag.",
+    },
+    {
+      id: "3. Maintain pH balance and other chemical levels.",
+    },
+    {
+      id: "4. Make sure water temperature is right.",
+    },
+    {
+      id: "5. Change water regularly.",
+    },
+    {
+      id: "6. Clean tank glass and other structures.",
+    },
+    {
+      id: "7. Choose the right size for your tank.",
+    },
+    {
+      id: "8. Pick compatible fish species.",
+    },
+  ],
 };
 export const getFish = () => {
   return database.fish.map((fish) => ({ ...fish }));
+};
+export const getQuote = () => {
+  return database.quote.map((quote) => ({ ...quote }));
+};
+export const getLocation = () => {
+  return database.location.map((location) => ({ ...location }));
+};
+export const getTip = () => {
+  return database.tip.map((tip) => ({ ...tip }));
 };

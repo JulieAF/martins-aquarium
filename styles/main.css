@@ -1,3 +1,4 @@
+/* Martin's Aquarium title */
 h1 {
   color: #1dacbc;
   text-align: center;
@@ -12,6 +13,7 @@ article {
   border: 1px solid black;
   display: flex;
 }
+/* Fish title */
 h2 {
   color: #1dacbc;
   text-align: center;
@@ -22,13 +24,15 @@ h2 {
   font-weight: 400;
   line-height: normal;
 }
+/* fish info */
 .fishList {
   flex: 1 0 calc(25% - 10px);
   margin: 5px;
-  background: #e9d2ff;
+  background: #13616f;
   flex-direction: column;
   padding: 0px;
 }
+/* quote title */
 h3 {
   color: #1dacbc;
   text-align: center;
@@ -39,6 +43,7 @@ h3 {
   font-weight: 400;
   line-height: normal;
 }
+/* quotes text */
 .quote {
   flex: 1 0 calc(25% - 10px);
   margin: 5px;
@@ -46,6 +51,7 @@ h3 {
   flex-direction: column;
   padding: 0px;
 }
+/* harvesting locations title */
 h4 {
   color: #1dacbc;
   text-align: center;
@@ -56,10 +62,11 @@ h4 {
   font-weight: 400;
   line-height: normal;
 }
+/* location text */
 .location {
   flex: 1 0 calc(25% - 10px);
   margin: 5px;
-  background: #e9d2ff;
+  background: #186844;
   flex-direction: column;
   padding: 0px;
 }
