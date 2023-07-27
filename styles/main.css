@@ -1,95 +1,166 @@
+.container-all {
+  display: flex;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 /* Martin's Aquarium title */
 h1 {
-  color: #1dacbc;
+  margin-top: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #ffd452;
   text-align: center;
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-article {
-  border: 1px solid black;
-  display: flex;
+  letter-spacing: 5px;
+  text-shadow: 16px 22px 11px rgba(185, 163, 34, 0.8);
 }
 /* Fish title */
 h2 {
-  color: #1dacbc;
+  color: #fdbb2d;
   text-align: center;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
+  font-family: "Ubuntu", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-/* fish info */
-.fishList {
-  flex: 1 0 calc(25% - 10px);
-  margin: 5px;
-  background: #13616f;
-  flex-direction: column;
-  padding: 0px;
+#container {
+  display: flex;
+  justify-content: center;
 }
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+.fishList {
+  display: flex;
+  flex-direction: row;
+}
+/* fish info */
+.fish-card {
+  display: flex;
+  flex-direction: column;
+  color: #ab98f7;
+  line-height: 25px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 325px;
+  position: relative;
+  z-index: 1;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  margin-right: 25px;
+  filter: brightness(120%);
+}
+.fish-card::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 325px;
+  left: 10px;
+  top: 0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  filter: blur(20px);
+}
+.fish__image {
+  width: 200px; /* Set the desired width */
+  height: auto;
+}
+
 /* quote title */
 h3 {
-  color: #1dacbc;
+  color: #fdbb2d;
   text-align: center;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
+  font-family: "Ubuntu", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 /* quotes text */
-.quote {
+.quote-card {
   flex: 1 0 calc(25% - 10px);
   margin: 5px;
-  background: #e9d2ff;
-  flex-direction: column;
-  padding: 0px;
+  line-height: 40px;
+  text-align: center;
+  color: #9685d8;
 }
 /* harvesting locations title */
 h4 {
-  color: #1dacbc;
+  color: #fdbb2d;
   text-align: center;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
+  font-family: "Ubuntu", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 /* location text */
-.location {
+.location-card {
   flex: 1 0 calc(25% - 10px);
   margin: 5px;
-  background: #186844;
+  text-align: center;
+  color: #9685d8;
+  line-height: 40px;
+}
+h5 {
+  color: #fdbb2d;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tip-card {
+  display: flex;
   flex-direction: column;
-  padding: 0px;
+  line-height: 40px;
+  font-family: "Ubuntu", sans-serif;
+  color: #9685d8;
 }
 aside {
-  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
   width: 300px;
-  padding: 20px;
-  margin: 10px;
-  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 50px;
+  background-color: #544a7d;
 }
 body {
   margin: 0;
   padding: 0;
 }
-.container-all {
-  display: flex;
-}
 main {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-.fish__image {
-  width: 200px; /* Set the desired width */
-  height: auto;
+  padding: 300px;
 }

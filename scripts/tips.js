@@ -10,7 +10,7 @@ export const TipList = () => {
   // Create HTML representations of each fish here
   for (const tip of tips) {
     // Why is there a backtick used for this string?
-    htmlString += `<section class="tip card">
+    htmlString += `<section class="tip-card">
               <div class="tip__id">${tip.id}</div>
           </section>
   `;
