@@ -10,7 +10,7 @@ export const LocationList = () => {
   // Create HTML representations of each fish here
   for (const location of locations) {
     // Why is there a backtick used for this string?
-    htmlString += `<section class="location card">
+    htmlString += `<section class="location-card">
               <div class="quote__id">${location.id}</div>
           </section>
   `;
